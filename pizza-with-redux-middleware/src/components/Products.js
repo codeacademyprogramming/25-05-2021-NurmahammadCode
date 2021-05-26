@@ -11,7 +11,7 @@ export const Products = connect(mapStateToProps)(({ products, basket }) => {
   return (
     <div style={{ display: "flex" }}>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
-        {products.map((item) => (
+        {products?.map((item) => (
           <Product item={item} key={item.id} />
         ))}
       </div>
@@ -20,7 +20,7 @@ export const Products = connect(mapStateToProps)(({ products, basket }) => {
         style={{ position: "relative", right: 20 }}
       >
         <img src={basketPng} width={40} height={40} alt="" />
-        {basket.length > 0 ? (
+        {basket?.length > 0 ? (
           <span
             style={{
               position: "absolute",
