@@ -1,0 +1,5 @@
+.first-section {
+  background: url("./assets/backgroundPizza.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
